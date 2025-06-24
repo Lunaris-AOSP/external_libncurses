@@ -2130,9 +2130,6 @@ extern NCURSES_EXPORT(int) _nc_wgetch(WINDOW *, int *, int EVENTLIST_2nd(_nc_eve
 /* lib_insch.c */
 extern NCURSES_EXPORT(int) _nc_insert_ch(SCREEN *, WINDOW *, chtype);
 
-/* lib_mvcur.c */
-#define INFINITY	1000000	/* cost: too high to use */
-
 extern NCURSES_EXPORT(int) _nc_mvcur(int yold, int xold, int ynew, int xnew);
 
 extern NCURSES_EXPORT(void) _nc_mvcur_init (void);
@@ -2149,7 +2146,6 @@ extern NCURSES_EXPORT(void) _nc_screen_wrap (void);
 extern NCURSES_EXPORT(bool) _nc_has_mouse (SCREEN *);
 
 /* lib_mvcur.c */
-#define INFINITY	1000000	/* cost: too high to use */
 #define BAUDBYTE	9	/* 9 = 7 bits + 1 parity + 1 stop */
 
 /* lib_setup.c */
